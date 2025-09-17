@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY MUSIC PLAYER</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="musicplayer">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+
+
+            <img src="img.png" class="song-img">
+            <h2>satisfaya</h2>
+            <p>Imran Khan</p>
+
+            <audio id="song" autoplay>
+                <source src="satisfaya.mp3" type="audio/mp3">
+            </audio>
+            <audio id="song">
+                <source src="lonely.mp3" type="audio/mp3">
+            </audio>
+            <audio id="song">
+                <source src="Running_on_mind.mp3" type="audio/mp3">
+            </audio>
+            <audio id="song">
+                <source src="what_if_i_told_you.mp3" type="audio/mp3">
+            </audio>
+            <input type="range" value="0" id="progress">
+            <div class="controls">
+                <div><i class="fa-solid fa-backward"></i> </div>
+                <div onclick="playpause()"> <i class="fa-solid fa-pause" id="ctrlicon"></i></div>
+                <div><i class="fa-solid fa-forward"></i></div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
